@@ -22,10 +22,7 @@ const maxSum = function(k, arr) {
       wSum -= arr[wStart];
       wStart += 1;
     }
-
   }
-
-
   return max;
 }
 
