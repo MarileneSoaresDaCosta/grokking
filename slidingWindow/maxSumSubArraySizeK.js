@@ -5,14 +5,14 @@
 const maxSum = function(k, arr) {
   // declare sum with value -1, since arr has only positive ints
   let max = -1;
-  // initialize start and end of window
+  // initialize window Start and window Sum
   let wStart = 0;
   let wSum = 0;
 
   // iterate over array
   for(let wEnd = 0; wEnd < arr.length; wEnd++) {
     wSum += arr[wEnd];
-    // checks if window size is less than k
+    // checks if window size is greater than k
     if( wEnd >= k - 1) {
       // check if sum is greater than max; if so reassign
       if ( wSum > max ) {
